@@ -1,0 +1,186 @@
+export default function About() {
+  return (
+    <>
+      {/* Modal Search Start */}
+      <div
+        className="modal fade"
+        id="searchModal"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-fullscreen">
+          <div className="modal-content rounded-0">
+            <div className="modal-header">
+              <h4 className="modal-title mb-0" id="exampleModalLabel">
+                Search by keyword
+              </h4>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body d-flex align-items-center">
+              <div className="input-group w-75 mx-auto d-flex">
+                <input
+                  type="search"
+                  className="form-control p-3"
+                  placeholder="keywords"
+                  aria-describedby="search-icon-1"
+                />
+                <span id="search-icon-1" className="input-group-text p-3">
+                  <i className="fa fa-search" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Modal Search End */}
+      {/* Header Start */}
+      <div className="container-fluid bg-breadcrumb">
+        <div className="bg-breadcrumb-single" />
+        <div className="container text-center py-5" style={{ maxWidth: 900 }}>
+          <h4 className="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
+            About Us
+          </h4>
+          <ol className="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li className="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li className="breadcrumb-item">
+              <a href="#">Pages</a>
+            </li>
+            <li className="breadcrumb-item active text-primary">About</li>
+          </ol>
+        </div>
+      </div>
+      {/* Header End */}
+      {/* About Start */}
+      <div className="container-fluid about bg-light py-5">
+        <div className="container py-5">
+          <div className="row g-5 align-items-center">
+            <div className="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+              <div className="about-img">
+                <img
+                  src="img/about-3.png"
+                  className="img-fluid w-100 rounded-top bg-white"
+                  alt="Image"
+                />
+                <img
+                  src="img/about-2.jpg"
+                  className="img-fluid w-100 rounded-bottom"
+                  alt="Image"
+                />
+              </div>
+            </div>
+            <div className="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+              <h4 className="text-primary">About BitBid</h4>
+              <h1 className="display-5 mb-4">
+                A Seamless Bidding Platform Connecting Clients & Developers
+              </h1>
+              <p className="text ps-4 mb-4">
+                BitBid is an innovative platform designed to connect clients with talented developers through a fair bidding process. Clients post their project requirements, and developers bid on those projects. Clients can then choose a developer based on their needs, budget, and preferences. Meanwhile, admins oversee the platform to ensure transparency, efficiency, and quality in all interactions.
+              </p>
+              <div className="row g-4 justify-content-between mb-5">
+                <div className="col-lg-6 col-xl-5">
+                  <p className="text-dark">
+                    <i className="fas fa-check-circle text-primary me-1" /> Post & Manage Projects
+                  </p>
+                  <p className="text-dark mb-0">
+                    <i className="fas fa-check-circle text-primary me-1" /> Transparent Bidding System
+                  </p>
+                </div>
+                <div className="col-lg-6 col-xl-7">
+                  <p className="text-dark">
+                    <i className="fas fa-check-circle text-primary me-1" /> Verified Developers
+                  </p>
+                  <p className="text-dark mb-0">
+                    <i className="fas fa-check-circle text-primary me-1" /> Admin Monitoring & Support
+                  </p>
+                </div>
+              </div>
+              <div className="row g-4 justify-content-between mb-5">
+                <div className="col-xl-5">
+                  <a href="#" className="btn btn-primary rounded-pill py-3 px-5">
+                    Learn More
+                  </a>
+                </div>
+                <div className="col-xl-7 mb-5">
+                  <div className="about-customer d-flex position-relative">
+                    <img
+                      src="img/customer-img-1.jpg"
+                      className="img-fluid btn-xl-square position-absolute"
+                      style={{ left: 0, top: 0 }}
+                      alt="Image"
+                    />
+                    <img
+                      src="img/customer-img-2.jpg"
+                      className="img-fluid btn-xl-square position-absolute"
+                      style={{ left: 45, top: 0 }}
+                      alt="Image"
+                    />
+                    <img
+                      src="img/customer-img-3.jpg"
+                      className="img-fluid btn-xl-square position-absolute"
+                      style={{ left: 90, top: 0 }}
+                      alt="Image"
+                    />
+                    <img
+                      src="img/customer-img-1.jpg"
+                      className="img-fluid btn-xl-square position-absolute"
+                      style={{ left: 135, top: 0 }}
+                      alt="Image"
+                    />
+                    <div className="position-absolute text-dark" style={{ left: 220, top: 10 }}>
+                      <p className="mb-0">Trusted by 5M+</p>
+                      <p className="mb-0">Global Users</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row g-4 text-center align-items-center justify-content-center">
+                <div className="col-sm-4">
+                  <div className="bg-primary rounded p-4">
+                    <div className="d-flex align-items-center justify-content-center">
+                      <span className="counter-value fs-1 fw-bold text-dark">32</span>
+                      <h4 className="text-dark fs-1 mb-0" style={{ fontWeight: 600, fontSize: 25 }}>k+</h4>
+                    </div>
+                    <div className="w-100 d-flex align-items-center justify-content-center">
+                      <p className="text-white mb-0">Projects Completed</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-4">
+                  <div className="bg-dark rounded p-4">
+                    <div className="d-flex align-items-center justify-content-center">
+                      <span className="counter-value fs-1 fw-bold text-white">21</span>
+                      <h4 className="text-white fs-1 mb-0" style={{ fontWeight: 600, fontSize: 25 }}>+</h4>
+                    </div>
+                    <div className="w-100 d-flex align-items-center justify-content-center">
+                      <p className="mb-0">Years of Industry Insight</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-4">
+                  <div className="bg-primary rounded p-4">
+                    <div className="d-flex align-items-center justify-content-center">
+                      <span className="counter-value fs-1 fw-bold text-dark">97</span>
+                      <h4 className="text-dark fs-1 mb-0" style={{ fontWeight: 600, fontSize: 25 }}>+</h4>
+                    </div>
+                    <div className="w-100 d-flex align-items-center justify-content-center">
+                      <p className="text-white mb-0">Skilled Team Members</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* About End */}
+    </>
+  );
+}
